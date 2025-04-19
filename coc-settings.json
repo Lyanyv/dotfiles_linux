@@ -1,0 +1,145 @@
+{
+  "suggest.minTriggerInputLength": 2,
+  "suggest.virtualText": true,
+  "suggest.enableFloat": true,
+  "suggest.asciiCharactersOnly": true,
+  "suggest.asciiMatch": false,
+  "suggest.formatItems": [ "kind", "abbr", "menu", "shortcut" ],
+  "suggest.completionItemKindLabels": {
+    "text": "",
+    "method": "",
+    "function": "",
+    "constructor": "",
+    "field": "",
+    "variable": "",
+    "class": "",
+    "interface": "",
+    "module": "",
+    "property": "",
+    "unit": "",
+    "value": "",
+    "enum": "",
+    "keyword": "",
+    "snippet": "",
+    "color": "",
+    "file": "",
+    "reference": "",
+    "folder": "",
+    "enumMember": "",
+    "constant": "",
+    "struct": "",
+    "event": "",
+    "operator": "",
+    "typeParameter": "",
+    "default": ""
+  },
+  "coc.preferences.jumpCommand": "tabe",
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "signature.preferShownAbove": false,
+
+  "list.floatPreview": true,
+  "list.alignColumns": true,
+  "list.selectedSignText": "",
+  "list.extendedSearchMode": true,
+  "list.previewToplineOffset": 5,
+
+  // diagnostic
+  "list.source.diagnostics.defaultOptions": [ "--auto-preview", "--no-quit", "--normal" ],
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
+  "list.source.symbols.defaultOptions": [ "--auto-preview", "--no-quit", "--interactive" ],
+
+  // coc-lists
+  "session.saveOnVimLeave": true,
+  "list.source.files.defaultOptions": [ "--no-quit" ],
+  "list.source.files.defaultArgs": [ "-folder" ],
+  "list.source.grep.defaultOptions": [ "--auto-preview", "--no-quit", "--interactive" ],
+  "list.source.grep.defaultArgs": [ "-folder", "-regex" ],
+  "list.source.grep.args": [],
+  "list.source.lines.defaultOptions": [ "--auto-preview", "--no-quit", "--interactive" ],
+  "list.source.mru.defaultOptions": [ "--auto-preview", "--no-quit" ],
+  "list.source.mru.defaultArgs": [ "-A" ],
+
+  // outline
+  "outline.autoPreview": false,
+  "outline.keepWindow": true,
+  "outline.sortBy": "position",  // ["position", "name", "category"]
+  "outline.expandLevel": 0,
+  // tree
+  "tree.key.activeFilter": "/",
+  "tree.key.collapseAll": "M",
+  "tree.key.toggle": "t",
+
+  // coc-word
+  "coc.source.word.priority": 0,
+  "coc.source.word.filetypes": [ "text", "tex", "latex", "markdown" ],
+
+  // coc-snippets
+  "snippets.autoTrigger": true,
+  "snippets.ultisnips.enable": true,
+  "snippets.ultisnips.directories": [],
+  "snippets.snipmate.enable": false,
+  "snippets.massCode.enable": false,
+
+  // coc-pyright
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.maxNumberOfProblems": 1024,
+  "python.linting.ruffEnabled": true,
+  "python.linting.ruffArgs": [ "--ignore=E126,E501,W503,W504" ],
+  "python.linting.ruffStdin": true,
+  "pyright.organizeimports.provider": "ruff",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [],
+
+  "pyright.completion.importSupport": true,
+  "pyright.completion.snippetSupport": true,
+  "python.analysis.autoSearchPaths": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.autoImportCompletions": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.functionReturnTypes": false,
+
+  "semanticTokens.enable": false,
+
+  // coc-markdownlint
+  "markdownlint.onOpen": true,
+  "markdownlint.onSave": true,
+  // set this to true may cause this extension to stop working
+  "markdownlint.onChange": false,
+  "markdownlint.config": {
+    "default": true,
+    "MD001": false,
+    "MD007": { "indent": 4 },
+    "MD010": {
+      "code_blocks": true,
+      "spaces_per_tab": 4
+    },
+    "MD013": false,
+    "MD024": { "siblings_only": true },
+    "MD028": false,
+    "MD029": { "style": "ordered" },
+    "MD032": false,
+    "MD033": false,
+    "MD036": false,
+    "MD041": false,
+    "MD045": false,
+    "MD046": { "style": "fenced" },
+    "MD047": false,
+    "MD048": { "style": "backtick" },
+    "MD049": { "style": "asterisk" },
+    "MD050": { "style": "asterisk" },
+    "MD054": {
+      "autolink": false,
+      "collapsed": false,
+      "full": false,
+      "inline": true,
+      "shortcut": false,
+      "url_inline": false,
+    },
+    "MD055": { "style": "leading_and_trailing" },
+  },
+}

@@ -1,0 +1,88 @@
+# A valid snippet should start with:
+#
+#    snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#    endsnippet
+#
+# Snippet options:
+#
+#    b - Beginning of line
+#    i - In-word expansion
+#    w - Word boundary
+#    r - Regular expression
+#    e - Custom context snippet
+#    A - Snippet will be triggered automatically, when condition matches
+#
+# Basic example:
+#
+#    snippet emitter "emitter properties" b
+#    private readonly ${1} = new Emitter<$2>()
+#    public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#    endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+# Escaping '`', '{', '$' and '\'
+
+snippet hr "horizontal rule" b
+
+---
+
+
+endsnippet
+
+snippet img "image" b
+![](./imgs/$1)
+endsnippet
+
+snippet imgt "image with title" b
+![](./imgs/$1)<center><u>$2</u></center>
+endsnippet
+
+snippet link "url" b
+[$1]($2 )
+endsnippet
+
+snippet vcf "colored font html tag with VISUAL selection" i
+<font color="${1:Tomato}" size="${2:3}">${VISUAL}</font>
+endsnippet
+
+snippet cf "colored font html tag" i
+<font color="${1:Tomato}" size="${2:3}">$3</font>
+endsnippet
+
+snippet kbd "kbd html tag" i
+<kbd>$1</kbd>
+endsnippet
+
+snippet eq "LaTeX equation, font size: Huge/huge/LARGE/Large/large/normalsize/small/footnotesize/scriptsize/tiny" b
+\$\$
+\\${1:Large}\{
+\\begin\{equation\}
+    $2
+\\end\{equation\}\}
+\$\$
+endsnippet
+
+snippet ppa "paired parentheses in math mode" i
+\\left( $1 \\right)
+endsnippet
+
+snippet psb "paired square brackets in math mode" i
+\\left[ $1 \\right]
+endsnippet
+
+snippet pcb "paired curly brackets in math mode" i
+\\left\\\{ $1 \\right\\\}
+endsnippet
+
+snippet cb "code blocks" b
+\`\`\` $1
+$2
+\`\`\`
+endsnippet
+
+snippet cmt "comment" b
+[//]: $1
+endsnippet
