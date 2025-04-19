@@ -275,7 +275,7 @@ map <leader>j <Cmd>HopVerticalAC<CR>
 map <leader>k <Cmd>HopVerticalBC<CR>
 
 call coc#config('python', {'pythonPath': g:python3_host_prog})
-call coc#config('snippets', {'userSnippetsDirectory' : stdpath('config').'\ultisnips'})
+call coc#config('snippets', {'userSnippetsDirectory' : stdpath('config').'/ultisnips'})
 
 " vim builtin plugins
 let g:loaded_netrw       = 0
