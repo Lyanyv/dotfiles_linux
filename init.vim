@@ -1,4 +1,4 @@
-" fd4b4326a505f66e16714c2b6625102b96d5d4bb
+" dc73187bd9535e2f22cacaccf8e4a17fc25b4e1f
 
 " dependencies
 " neovim
@@ -437,8 +437,7 @@ hi Search ctermfg=15 ctermbg=32 guifg=#FFFFFF guibg=#0087D7
 hi Cursor cterm=None gui=None ctermbg=36 guibg=#00BF9F
 
 " highlight for treesitter
-" hi! link TSVariable Identifier
-hi TSParameter ctermfg=DarkCyan guifg=DarkCyan
+hi @variable.parameter ctermfg=DarkCyan guifg=DarkCyan
 
 " highlight for markdown
 hi! link @text.title1 markdownH1
