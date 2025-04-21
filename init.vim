@@ -1,4 +1,4 @@
-" dc73187bd9535e2f22cacaccf8e4a17fc25b4e1f
+" 75abc95a3dc966c7b7fe8c48cbc82cc223c3f90f
 
 " dependencies
 " neovim
@@ -359,8 +359,10 @@ set wildmenu wildmode=longest,full
 set report=0
 set shortmess-=F shortmess+=mrI
 set belloff=
-silent! aunmenu PopUp.How-to\ disable\ mouse
 silent! aunmenu PopUp.-1-
+silent! aunmenu PopUp.-2-
+silent! aunmenu PopUp.Inspect
+silent! aunmenu PopUp.How-to\ disable\ mouse
 " copy and paste with system clipboard
 set clipboard=unnamedplus
 
@@ -392,6 +394,8 @@ noremap <expr> j  (v:count == 0 ? 'gj' : 'j')
 noremap <expr> k  (v:count == 0 ? 'gk' : 'k')
 map <expr> <Down> (v:count == 0 ? 'gj' : 'j')
 map <expr> <Up>   (v:count == 0 ? 'gk' : 'k')
+imap <Down> <C-o>gj
+imap <Up> <C-o>gk
 " search smartly, centrally and smoothly
 nnoremap n <Cmd>call feedkeys('Nn'[v:searchforward], 'n')<Bar>call feedkeys('zz')<CR>
 nnoremap N <Cmd>call feedkeys('nN'[v:searchforward], 'n')<Bar>call feedkeys('zz')<CR>
@@ -419,7 +423,9 @@ nmap <leader>o <Cmd>only<CR>
 nmap <leader>p <Cmd>setlocal spell!<CR>
 
 nmap \c /\<TODO\>\\|\<NOTE\>\\|\<XXX\>\\|\<FIX\>\\|\<FIXME\>\\|\<BUG\><CR>
-nmap \w / \+$\\|[^^ ] \{2,}<CR>
+nmap \w / \+$\\|[^^ ]\zs \{2,}<CR>
+autocmd FileType python nmap <buffer> \w / \+$\\|[^^ ]\zs \{2,}\ze[^#]<CR>
+autocmd FileType vim nmap <buffer> \w / \+$\\|[^^ ]\zs \{2,}\ze[^"]<CR>
 
 " Neovim's default mappings
 " nnoremap Y y$
