@@ -473,6 +473,7 @@ autocmd BufReadPost *
 " user config dir `:echo stdpath('config')`
 autocmd BufRead coc-settings.json set filetype=jsonc
 command Vimrc execute('CocConfig') | vsplit $MYVIMRC
+command HtmlColorNames exec 'tabe ' .. stdpath("config") .. '/mds/HtmlColorNames.md'
 " vim can't distinguish between `<Tab>` and `<C-i>`, `<Esc>` and `<C-[>`
 
 " `:TOhtml`
