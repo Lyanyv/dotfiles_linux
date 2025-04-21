@@ -40,6 +40,7 @@ let g:gruvbox_material_background = 'medium'
 let g:gruvbox_material_enable_bold = 1
 " termux only supports fonts from a single file
 let g:gruvbox_material_enable_italic = 0
+let g:gruvbox_material_disable_italic_comment = 1
 
 let g:gruvbox_material_transparent_background = 0
 let g:gruvbox_material_dim_inactive_windows = 1
