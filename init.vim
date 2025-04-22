@@ -1,4 +1,4 @@
-" a0f1cfd03c24c79cc5af40ca139684d55eb6cea3
+" 2c38aa7891f8e519eec2d2892ac24e525933843e
 
 " dependencies
 " neovim
@@ -15,6 +15,8 @@
 set fileencodings=ucs-bom,utf-8,gb18030,gbk,cp936,gb2312,latin1
 set ambiwidth=double
 call setcellwidths([
+    \ [0x0391, 0x03A9, 1],
+    \ [0x03B1, 0x03C9, 1],
     \ [0x00ac, 0x00ac, 1],
     \ [0x2423, 0x2423, 1],
     \ [0x2588, 0x2588, 1],
