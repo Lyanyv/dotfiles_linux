@@ -1,4 +1,4 @@
-" 75abc95a3dc966c7b7fe8c48cbc82cc223c3f90f
+" a0f1cfd03c24c79cc5af40ca139684d55eb6cea3
 
 " dependencies
 " neovim
@@ -317,6 +317,7 @@ colorscheme gruvbox-material
 
 lua << EOF
 require("ibl").setup {
+    viewport_buffer = { min = 1024 },
     indent = {
         char = "▏",
         highlight = {
