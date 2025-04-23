@@ -1,4 +1,4 @@
-" c464760690cacd9380ae320a0bf20555b0e1647b
+" aa4f212b3f3b591c945db6168a089967dbb5dd96
 
 " dependencies
 " neovim
@@ -353,7 +353,7 @@ autocmd FileType * setlocal wrapmargin=0
 
 set display=lastline,uhex conceallevel=0
 " ◦␣¬░▒▓█
-set list listchars=space:◦,trail:█,eol:¬
+set list listchars=space:◦,trail:█,eol:¬,nbsp:␣
 
 set nospell spelllang=en,cjk
 set showmatch
@@ -381,7 +381,7 @@ autocmd FileType * set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType c,cpp,json,jsonc,yaml
     \ setlocal tabstop=2 softtabstop=2 shiftwidth=2
-set backspace=2
+set backspace=indent,eol,start
 set mouse=a mousemodel=popup mousehide
 set mousescroll=ver:2,hor:4
 
