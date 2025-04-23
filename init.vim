@@ -1,4 +1,4 @@
-" aa4f212b3f3b591c945db6168a089967dbb5dd96
+" 6688ca61f1388f404fc041b4f86787783a1b7a5b
 
 " dependencies
 " neovim
@@ -389,6 +389,7 @@ set mousescroll=ver:2,hor:4
 " movement
 " horizontal
 map <leader>a ^
+map <leader>e $
 " hold selection when shifting sidewards
 xnoremap < <gv
 xnoremap > >gv
