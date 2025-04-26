@@ -36,3 +36,6 @@ alias cls='clear'
 alias :q='exit'
 alias vi='nvim'
 alias wget='wget -c'
+
+# tar cvf - /path/to/folder | split -b 1G - output.tar.
+# cat output.tar.* | tar xvf -
