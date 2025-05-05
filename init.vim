@@ -1,4 +1,4 @@
-" d95fdc0686aa845509da88798788570591074cb0
+" 9c8c5e4019d05aa19a89d103fb162031a67ef612
 
 " dependencies
 " neovim
@@ -93,7 +93,7 @@ let g:AutoPairsStringHandlingMode = 0  " since syntax is killed by treesitter
 " jump
 let g:AutoPairsNoJump = 0
 " fast wrap
-let g:AutoPairsShortcutFastWrap = "<C-b>"
+let g:AutoPairsShortcutFastWrap = "<C-l>"
 let g:AutoPairsMultilineFastWrap = 1
 let g:AutoPairsMultibyteFastWrap = 1
 
